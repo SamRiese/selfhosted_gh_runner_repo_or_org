@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  runner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - GITHUB_OWNER=username
+      - GITHUB_REPOSITORY=repo-name
+      - GITHUB_ORGANIZATION=
+      - GITHUB_PAT=gh-token
