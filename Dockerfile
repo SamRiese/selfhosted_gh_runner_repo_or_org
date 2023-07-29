@@ -16,7 +16,6 @@ RUN apt-get update \
         git \
         jq \
         libicu-dev \
-	libreoffice \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && useradd -m github \
